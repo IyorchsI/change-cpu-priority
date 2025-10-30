@@ -39,8 +39,6 @@ echo "concat_value:${concat_value}"
 
 pid_exe=$(ps aux | grep "${concat_value}" | sort -nrk 3 | head -1 | awk '{print $2}') # search for name a list of process by highest cpu (reverse order, correct numbers with the column 3), getting the first line and return the pid
 
-#pid_exe=$(ps -p $(pgrep ${game_exe} 2>/dev/null) -o pid,%cpu --sort=-%cpu 2>/dev/null | head -n 2 | tail -n 1 | awk '{print $1}') #find the pid of the highest cpu usage of a process
-
 if [[ ${pid_exe} = "" ]]; then
     echo "no se encontró el exe"
     sleep 1
