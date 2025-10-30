@@ -15,3 +15,5 @@ echo $basb_dir
 steam "steam://rungameid/${steam_id}"
 
 sudo "${basb_dir}change-cpu-priority-for-highest-one.sh" ${exe_name} ${priority_value} ${wait_time}
+
+exit 0
