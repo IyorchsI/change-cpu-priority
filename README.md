@@ -16,4 +16,4 @@ This bash file contents inside multiple params of the process (exe), they'll be 
 -**wait_time** The time until the game is open. <br/>
 -**steam_id** The id given by valve in their store. Example https://store.steampowered.com/app/1761390/Hatsune_Miku_Project_DIVA_Mega_Mix/ it's 1761390 <br/>
 # change-cpu-priority-for-highest-one.sh
-This bash wait until the game is opend, if the time is exceded it will exit. When its found the bash will search the pid of the highest cpu usage, the reason why is the highest one because there are multiple instances of the same game and only one is using the cpu (most cases). And finally the bash calls for renice (you need sudo for this) and change the cpu priority, you can check that with htop (PRI and NI columns).
+This bash wait until the game is open, if the time is exceded it will exit. When its found the bash will search the pid of the highest cpu usage, the reason why is the highest one because there are multiple instances of the same game and only one is using the cpu (most cases). And finally the bash calls for renice (you need sudo for this) and change the cpu priority, you can check that with htop (PRI and NI columns).
